@@ -2,6 +2,7 @@
 ## How to use rsync on esxi -- which doesn't have this tool
 
 $ sshfs -o allow_other root@xx.xx.xx.xx:/vmfs/volumes/esxi_pool1/<OPTIONA_TARG_DIR>/ /mnt/PATH/TO/LOCAL/MOUNT_SPOT
+
 $ rsync -av /home/<USER>/stuff/* /mnt/PATH/TO/LOCAL/MOUNT_SPOT
 
 Esxi uses a modified form of busybox for its command line and is missing many common GNU/linux tools.  
